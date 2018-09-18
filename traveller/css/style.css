@@ -1,0 +1,543 @@
+*{box-sizing: border-box;}
+
+body {}
+
+a:hover {color:#fff;  }
+
+.navbar {background: rgba(0, 0, 0, 0);
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s ease-in-out}
+
+.navbar .active {color: #ff7006}
+
+.scrolled {background: #c6eaee;
+           position: fixed;
+	       top: 0;
+           z-index: 99;
+           width: 100%}
+
+.backgrounda {
+  height: 700px;
+	background: no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.backgroundb {
+  min-height: 720px;
+	background:  no-repeat center fixed;
+	background-color: #fff;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+
+
+.backgroundc {
+  min-height: 720px;
+	background: url(" ../img/view.png") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.last-background {
+  min-height: 900px;
+	background: url(" ../img/night-sky.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.contact {background: rgba(0,0,0,0.30);
+          position: absolute;
+          width: 100%;
+         height: 100%;
+         color: #fff}
+
+.headtit {
+  margin-top:110px;
+  text-align:center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color:#000;
+	line-height: 1
+}
+
+.headtit p {letter-spacing: 0.25em;}
+
+.headtit h1 {font-family: 'Cinzel Decorative', cursive;
+             font-weight: 900;
+             font-size: 5rem;}
+
+.headtit h1 span {color:#ff7006}
+
+.headtit .btn-outline-light {box-shadow: 0 0 10px 3px #c56f30;}
+
+.btn-outline-light {
+    color: #ff7006;
+    background-color: transparent;
+    background-image: none;
+	border-color: #ff7006;}
+
+.btn-outline-light:hover {
+    color: #fff;
+    background-color: #ff7006;
+	border-color: #ff7006;}
+
+.btn-outline-light.focus, .btn-outline-light:focus {
+	box-shadow: 0 0 0 0.2rem #fb6f0869;}
+
+.btn-outline-light:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #ff7006;
+	border-color: #ff7006;}
+
+#video-background {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+	font-weight: 900;}
+
+.navbar-brand {color: rgb(0, 0, 0);
+	font-weight: 900;
+    font-family: 'Cinzel Decorative', cursive;
+    }
+
+.navbar-brand span {color:#ff7006}
+
+.navbar-light .navbar-nav .nav-link.active {color:#ff7006}
+
+
+.headtit1 {
+  text-align:center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color:#000;
+	line-height: 1
+}
+
+.headtit1 p {letter-spacing: 0.18em;}
+
+.headtit1 h1 {font-family: 'Cinzel Decorative', cursive;
+             font-weight: 900;
+             color:#ff7006 }
+
+.card:hover {box-shadow:0 0 10px 2px #000}
+
+.cnt {display: flex;
+      margin: 0 auto;}
+
+
+.box {position: relative;
+    margin-top: 24px;
+    padding: 31px 18px 16px;
+    border: 2px solid #363636;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer}
+
+.box:hover {box-shadow: 0 0 10px 1px #000}
+
+.box .icons {position: absolute;
+			left: 0;
+			right: 0;
+			top: -24px;}
+.box h3 {color:#ff7006;;
+         font-family: 'Lobster', cursive;}
+
+.box p {    font-weight: 500;
+    letter-spacing: 0.05rem;}
+
+
+.tabs-content .tab2 {display: none}
+
+.tabs-content .tab3 {display: none}
+
+.about-head {margin-bottom: 50px}
+
+
+.search {border: 1px solid #ff7006;
+         border-radius: 10px;
+         margin: 0 auto 20px;
+         overflow: hidden;
+         position: relative;}
+
+.search span {margin-left: 10px;
+              color: #ff7006;}
+
+.search h5 {    background-color: #ff7006;
+    color: #FFF;
+    width: 180px;
+    position: absolute;
+    right: 0;
+    display: inline;
+    padding: 5px 0px 10px 5px;
+    cursor: pointer;}
+
+.search h6 {    background-color: #ff7006;
+    color: #FFF;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    display: none;
+    padding: 2px 0 5px 15px;
+	cursor: pointer;
+    }
+
+.search h5:hover {background: #ff7006d4}
+
+.tab1 {-moz-perspective: 2000px;
+       perspective: 2000px;}
+
+.tab1 .form-control {      display: inline;
+	                         box-shadow: none;
+                              width: 80%;
+                            border: none;}
+
+
+.search-head {display: block;
+               width: 100%;
+              margin: 10px 0;
+              position: relative;}
+
+.search-head h3 {display: inline;}
+
+.search-head h6 {    position: absolute;
+    right: 20px;
+	top: -10px;
+    line-height: 3;
+    display: inline;
+    cursor: pointer}
+
+.search-head h6:hover {text-decoration: underline;}
+
+
+.text-muted i {color: #ff7006;}
+
+
+.tab1 .card:hover {
+	cursor: pointer;
+    }
+
+
+
+.reflect {position: relative;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-moz-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+    -moz-backface-visibility: hidden;}
+
+.front {position: absolute;
+        z-index: 2;
+        backface-visibility: hidden;}
+
+.back {z-index: 1;
+       transform: rotateY(180deg);
+       backface-visibility: hidden;}
+
+.reflect1 {transform: rotateY(180deg)}
+
+.tab2 .card:hover {box-shadow:0 0 0 0 #fff;
+                   cursor: pointer;}
+
+
+
+.container1 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ff7006;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+.tabs {margin: 80px auto;
+       border: 2px solid #363636;
+       border-radius: 10px;
+       width: 70%;
+       position: relative;}
+
+.tabs:hover {background: rgba(0,0,0,0.15)}
+
+.tabs a {color: #000;}
+
+.tabs a:hover {color: #ff7006;}
+
+.tabs a i {padding: 0 2px}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ff7006a6;
+}
+
+.tabs button {margin: 20px 0;}
+
+.tabs h5 span {background-color:#ff7006;
+               color: #fff;}
+
+.t-body {margin: 0 20px;}
+
+
+
+.contact i {color: #ff7006;}
+
+.contact .form-control {margin-bottom: 10px;}
+
+.contact button {background: #ff7006; 
+                 color: #fff;}
+
+.contact button:hover {background: rgba(0,0,0,0.01);}
+
+
+
+.footer b {font-family: 'Lobster', cursive;}
+
+
+.modal-header, .modal-footer {background: #fff; border-radius: 10px;}
+
+.modal-header span {color: #ff7006;}
+
+.modal-footer button {background: rgba(255,112,6,0.60)}
+
+@media (max-width: 460px){ .backgrounda {height: 100vh;
+	                                     background: url(../img/view222.jpg)no-repeat fixed;
+	                                     background-size: 100% 100%;}
+	                       .headtit p {font-size: 13px}
+	                       .headtit h1 {font-size: 3rem}
+							.search h5 {display: none;}
+							.search h6 {display: inline;}
+							.search-head h3 {font-size: 20px;
+							margin-left: 10px;
+							font-weight: 800;}
+							.headtit1 h1 {font-size: 1.5rem}
+							.headtit1 p  {font-size: 14px}
+							.tabs {width: 95%}
+							.modal-body .mobile-screen {width: 320px;
+	                                        height: 500px;}
+	.last-background {min-height: 700px;}
+	#video-background {display: none;}
+}
+
+
+
+@media (max-width: 767px) {#video-background {right: 0;
+											  left: -50%;
+											  top: 0;
+											  width: 200%;
+											  z-index: -100;}}
+
+
+@media (min-width: 768px){.backgrounda {height: 500px}
+	                       .headtit h1 {font-size: 4rem}}
+
+
+@media (min-width: 992px){.backgrounda {height: 600px}
+	                       .headtit p {font-size: 20px}
+	                       .headtit h1 {font-size: 5rem}
+						   .other-options .option-text {font-size: 14px;}}
+
+
+@media (min-width: 1200px){.backgrounda {height: 700px}
+		                   .headtit p {font-size: 24px}
+	                       .headtit h1 {font-size: 7rem}
+						   .other-options .option-text {font-size: 14px;}}
+
+
+/*   Start Login  */
+
+::selection {
+  background: rgba(255,255,255,.5);
+  color: #333;
+}
+
+.backgrounda .modal-content {background: rgba(0,0,0,0.00);
+                             border: none;}
+
+.mobile-screen{
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+	background: url( ../img/night-sky.jpg);
+    background-size: 100% 100%;
+}
+
+.backgrounda .header{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(171, 164, 160, 0.20);
+}
+
+.backgrounda h2{
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 21px;
+  color: #ff7006;
+}
+
+.backgrounda .logo{
+  position: relative;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: url(https://s10.postimg.org/z6xqdowix/imageedit_1_8168502978.gif) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.backgrounda form{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+
+.backgrounda input,
+.login-btn{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 84%;
+}
+
+.backgrounda input{
+  border: none;
+  border-left: 5px solid;
+  background: none;
+  border-color: #ff7006;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all .2s ease-in-out;
+}
+
+.backgrounda input:focus{
+  outline: 0;
+  background:  rgba(255,112,6,0.20);
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.backgrounda a{
+  text-decoration: none;
+}
+
+ 
+
+.login-btn{
+  border-radius: 4px;
+  text-align: center;
+  background: rgba(255,112,6,0.60);
+  color: #fff;
+}
+
+.login-btn:hover {background: rgba(255,112,6,0.20);}
+
+.other-options{
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 2px;
+  left: 0;
+}
+
+.option{
+  position: relative;
+  display: block;
+  float: right;
+  width: 45%;
+  margin: auto;
+  background: rgba(0,0,0,.2);
+  border-bottom: 2px solid  #ff7006;
+  cursor: pointer;
+}
+
+.option:first-child{
+  float: left;
+  left: 3.3%;
+}
+
+.option:last-child{
+  margin-right: 3.3%;
+}
+
+.option-text{
+  position: relative;
+  margin: 0;
+  line-height: 30px;
+  color: #ccc;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#fpass-form,
+#registration-form{
+  display: none;
+}
+
+/* Change colors container */
+.change-colors-container{
+  position: absolute;
+  height: 300px;
+  width: 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(255,255,255,.5);
+}
+
+
+/* End Login */
+
+

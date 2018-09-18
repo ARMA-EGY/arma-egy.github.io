@@ -1,0 +1,14 @@
+.navbar1 {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.block1 {
+    border: 2px solid #363636;
+}
+
+
+.menu1 .fa-gear {
+    background-color: rgba(0,0,0,0.7);
+}
+
+footer {background:radial-gradient(circle farthest-side at 15% 75%, #363636 20%,#afa7a7 90%);}

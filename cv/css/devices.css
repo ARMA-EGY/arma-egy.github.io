@@ -1,0 +1,176 @@
+/*================================= Start Devices ==============================*/
+
+
+iframe {
+    transform: scale(0.219);
+    transform-origin: top left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    border-color: #000
+}
+.mobile {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/iphone-optimised.png");
+    position: relative;
+    width: 95px;
+    height: 196px;
+    z-index: 5
+}
+.mobile iframe {
+    width: 320px;
+    height: 480px;
+	top: 32px;
+    left: 11px;
+    overflow-y: hidden
+}
+.tablet {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/ipad-optimised.png");
+    width: 246px;
+    height: 325px;
+    z-index: 3;
+    position: relative;
+    
+}
+.tablet iframe {
+    width: 796px;
+    height: 1059px;
+    top: 37px;
+    left: 41px;
+    overflow-y: hidden
+}
+.laptop {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/laptop-screen-optimised.png");
+    width: 477px;
+    height: 307px;
+    
+    position: relative;
+    z-index: 2
+}
+.laptop iframe {
+    width: 1280px;
+    height: 802px;
+    top: 26px;
+    left: 60px;
+    transform: scale(0.277);
+    -webkit-transform: scale(0.277);
+    -o-transform: scale(0.277);
+    -ms-transform: scale(0.277);
+    -moz-transform: scale(0.277);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left
+}
+.desktop {
+    position: relative;
+    width: 566px;
+    height: 538px;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/large-screen-optimised.png");
+    z-index: 1
+}
+.desktop iframe {
+    left: 28px;
+    top: 38px;
+    width: 1600px;
+    height: 992px;
+    transform: scale(0.3181);
+    -webkit-transform: scale(0.3181);
+    -o-transform: scale(0.3181);
+    -ms-transform: scale(0.3181);
+    -moz-transform: scale(0.3181);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left
+}
+.about-tool {
+    font-size: 1.2em;
+    max-width: 64em;
+    width: 80%;
+    margin: 1em auto
+}
+.about-tool li {
+    margin-bottom: 0.5em;
+    line-height: 1.2
+}
+
+@media (max-width: 767px) {.desktop {    transform: scale(0.5);
+    right: 130px;}
+	.mobile {transform: scale(2);
+    top: 50px;
+    left: 90px}}
+
+
+@media (min-width: 768px) {.tablet {    transform: scale(1.5);
+    left: 50px;}
+	.mobile {    transform: scale(2);
+    left: 120px;
+    top: 30px;}}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
+
+
+
+#carbonads {
+    max-width: 400px;
+    margin: 1em auto;
+}
+/* To position the text beside the image: */
+
+.carbon-img {
+    float: left;
+    margin-right: 8px;
+}
+.carbon-text {
+    display: block;
+}
+/* To position the text below the image: */
+/*
+.carbon-text { 
+    display: block; 
+    width: 130px; 
+}
+*/
+/* To separate the attribution from the text: */
+
+.carbon-poweredby {
+    float: right;
+}
+.carbon-text {
+    padding: 8px;
+}
+/* To add a border around the ad: */
+
+#carbonads {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+/* To style the text and attribution: */
+
+.carbon-text {
+    font-size: 12px;
+    color: orange;
+}
+.carbon-poweredby {
+    font-size: 75%;
+}
+/* To fixed position the ad: */
+/*
+#carbonads { 
+    position: fixed; 
+    bottom: 5px;
+    right: 5px;
+}
+*/
+  
+
+
+/*================================= End Devices ==============================*/
+

@@ -1,0 +1,66 @@
+.navbar1 {
+	background-color: #3498db;
+}
+
+.block1 {
+    border: 2px solid #3498db;
+}
+
+
+.menu1 .fa-gear {
+    background-color: #3498db;
+}
+
+.footer {background:radial-gradient(circle farthest-side at 15% 75%, #3498db 20%,#26e3ec 90%);}
+
+
+body{
+			font-family: 'Hind Siliguri', sans-serif;
+			background: rgba(90, 84, 84, .7) url(' ../img/body.png')repeat;
+			height: 100%;
+			width: 100%;
+			font-size: 15px;
+			line-height: 1.5em;
+		}
+
+h2 {color: #3498db}
+
+.menu1 {
+	background-color: #535c68;}
+
+.menu1 .theme {
+	background-color: #f1f1f1;}
+
+
+.buttons {
+	background-color: #3597db;}
+.buttons1 {
+    background-color: #3596db;
+}
+
+.buttons2 {
+    background-color: #3596db;
+}
+
+
+.items {
+    color: #3597db;
+}
+
+.menu1 .remove i {
+	color: #3597db;}
+
+.block1 {background-color: rgba(0,0,0,0.00)}
+
+
+.bar4 {;
+    background-color: #3597db;
+}
+
+.social {
+    color: #f1f1f1;
+}
+
+.bar1, .bar2, .bar3 {background-color: #3597db;
+}
+

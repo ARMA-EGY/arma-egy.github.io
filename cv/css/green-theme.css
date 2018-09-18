@@ -1,0 +1,26 @@
+.navbar1 {
+	background-color: #D1B57C;
+}
+
+.block1 {
+    border: 2px solid #D1B57C;
+}
+
+
+.menu1 .fa-gear {
+    background-color: #D1B57C;
+}
+
+.footer {background:radial-gradient(circle farthest-side at 15% 75%, #D1B57C 20%,#868282 90%);}
+
+
+body{
+			font-family: 'Hind Siliguri', sans-serif;
+			background: rgba(90, 84, 84, .7) url('https://cloud.githubusercontent.com/assets/8037580/18605179/85a080d2-7cbd-11e6-9079-ec09a8024662.png')repeat;
+			height: 100%;
+			width: 100%;
+			font-size: 15px;
+			line-height: 1.5em;
+		}
+
+h2 {color: #D1B57C}

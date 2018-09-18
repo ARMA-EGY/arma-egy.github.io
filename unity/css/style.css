@@ -1,0 +1,419 @@
+/* General styling */
+
+*:focus {
+  outline: none !important;
+}
+
+*:hover {
+  outline: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  position: relative;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+hr {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  width: 20%;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  max-width: 80% !important;
+}
+
+.background {
+  background: #262F36;
+  color: white;
+}
+
+
+/* Navbar styling */
+
+header {
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  border: none;
+  position: fixed;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 100;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.nav>li>a {
+  height: 100%;
+  color: white;
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+
+.sticky-header {
+  background-color: rgba(38, 47, 54, .7);
+  transition: all 0.4s ease;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: all ease 1s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgb(38,47,54);
+  background-color: white;
+  border-radius: 25px;
+  transition: all ease 1s;
+}
+
+
+
+/* Jumbotron styling */
+
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(" ../img/colorful_background_5-wallpaper-1280x1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.container-text {
+  width: 100%;
+}
+
+
+/* About, how, what, portolio, contact styling */
+
+#about,
+#how,
+#contact {
+  height: 100vh;
+}
+
+#what,
+#portfolio {
+  padding-top: 80px;
+}
+
+#about .row,
+#how .row,
+#contact .row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#about h2,
+#how h2,
+#what h2 {
+  text-transform: uppercase;
+}
+
+#about h5,
+#how h5,
+#what h5 {
+  letter-spacing: .15em;
+  font-size: 14px;
+}
+
+#about p,
+#how p,
+#what p {
+  line-height: 1.6;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+
+/* How styling */
+
+#how img {}
+
+
+/* What styling */
+#what {
+  height: 110vh;
+}
+
+#what h5 {
+  padding-bottom: 80px;
+}
+
+#what .row img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25%;
+}
+
+#what .col-lg-4 p {
+  margin-bottom: 75px;
+  font-size: 16px;
+}
+
+
+/* Cust_case styling */
+
+#cust_case {
+  height: 20vh;
+}
+
+#cust_case .con {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cust_case .row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* Portfolio styling */
+#portfolio {
+  margin-bottom: 75px;
+}
+
+.projects a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.thumbnail {
+  outline: none !important;
+  min-height: 250px;
+  max-height: 250px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.project-box {
+  position: relative;
+/*   display: inline-block; */
+  padding: 0;
+}
+
+.after-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.after-text a {
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.8s ease;
+}
+
+.after-text a:hover {
+  color: rgb(38, 47, 54);
+  font-weight: light;
+  background-color: white;
+}
+
+.project-box:hover .after-text {
+  display: inline-block;
+  background: rgba(0, 0, 0, .6);
+}
+
+/* .thumbnail img:hover {
+  background-color: black;
+} */
+
+/* .thumbnail:hover {
+  -webkit-box-shadow: -5px 10px 20px 0px rgba(38, 47, 54, 0.5);
+  -moz-box-shadow: -5px 10px 20px 0px rgba(38, 47, 54, 0.5);
+  box-shadow: -5px 10px 20px 0px rgba(38, 47, 54, 0.5);
+} */
+
+
+/* Contact styling */
+
+#contact .container {
+  height: 100%;
+}
+
+#contact img {
+  border-radius: 50%;
+  height: 150px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  font-size: 20px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-radius: 10px;
+  color: rgb(38, 47, 54);
+}
+
+form input {
+  height: 50px;
+}
+
+form input[type=submit] {
+  width: 40%;
+  display: block;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit:hover {
+  background-color: white;
+  color: rgb(38, 47, 54);
+}
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+  color: rgba(38, 47, 54, .5)
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .jumbotron h1 {
+    font-size: 80pt;
+	  font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    width: 100%;
+  }
+  #about p,
+  #how p,
+  #what p {
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+/* Styling the reference container */
+#reference {
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+.reference__block {
+  position: relative;
+  width: calc(1080px / 3);
+  height: calc(1080px / 3);
+  background-size: cover;
+}
+.reference__block:hover > .reference__block__color-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+.reference__block:hover > .reference__block__inner {
+  opacity: 1;
+}
+.reference__block:hover .reference__block__inner__title {
+  transform: translateY(0);
+  transition: transform .4s ease;
+}
+.reference__block:hover .reference__block__inner__paragraph {
+  transform: translateY(50%);
+  transition: transform .4s ease;
+}
+.reference__block__color-overlay {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity transform .2s ease;
+  -webkit-transition: opacity transform .2s ease;
+  transform: scale(0.85);
+}
+.reference__block__inner {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reference__block__inner p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.reference__block__inner .reference__block__inner__title {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  transform-style: preserve-3d;
+}
+.reference__block__inner .reference__block__inner__paragraph {
+  font-weight: 200;
+  font-style: italic;
+  transform: translateY(0);
+  text-transform: lowercase;
+}
+
+
