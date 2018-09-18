@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/devices.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+<title>MK</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/java.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+	
+	<!-- Start NavBar -->
+	<nav class="navbar navbar-expand-md navbar-dark wow slideInDown" data-wow-delay="1s" >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#/!" ><img src="img/n-mk3.png"  alt=""/></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#!about" >About </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!service" >Services</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="#!portfolio" >Portfolio</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="#!contact" >Contact</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+	<!-- End NavBar -->
+	
+
+	
+	<ng-view></ng-view>
+
+	
+
+	<!-- BEGIN: Powered by Supercounters.com -->
+<center style="
+    background-color: #000;"><script type="text/javascript" src="//widget.supercounters.com/ssl/hit.js"></script><script type="text/javascript">sc_hit(1507957,0,6);</script><br><noscript><a href="http://www.supercounters.com/hitcounter">free simple hit counter</a></noscript>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+	
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.html"
+    })
+    .when("/about", {
+        templateUrl : "about.html"
+    })
+	.when("/service", {
+        templateUrl : "service.html"
+    })
+	.when("/portfolio", {
+        templateUrl : "portfolio.html"
+    })
+	.when("/contact", {
+        templateUrl : "contact.html"
+    })
+    
+});
+</script>
+	
+	
+</body>
+</html>

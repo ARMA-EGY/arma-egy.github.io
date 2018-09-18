@@ -1,0 +1,76 @@
+
+.backgroundA {
+  height: 70vh;
+	background: url(" ../img/cof1.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+
+
+.testimonials-img {
+    right: 50%;
+    margin-right: -50px;
+}
+
+.testimonials-blob {
+    right: 80%;
+    transform: rotate(-45deg);
+}
+
+.owl-prev {
+    position: absolute;
+    right: 0;
+	left: unset;
+}
+
+
+.owl-next {
+    position: absolute;
+    left: 0;
+	right: unset;
+}
+
+.testimonial-carousel .owl-prev {
+	position: absolute;
+    left: unset;
+	right: 0;
+}
+
+.testimonial-carousel .owl-next {
+	position: absolute;
+    right: unset;
+	left: 0;
+}
+
+
+.contact-form1 .label1 {
+    right: 20px;
+	left: unset;
+}
+
+#toggle {
+    left: -28px;
+}
+
+.navbar ul {text-align: right;}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    border-right: 1px solid #c2b49a;
+	border-left: 0;
+}
+
+.scrolled {
+    left: 0;
+}
+
+
+
+@media (max-width: 767px)
+{
+	.backgroundA {height: 90vh;}
+}
+
+

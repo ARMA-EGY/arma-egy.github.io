@@ -1,0 +1,453 @@
+*{box-sizing: border-box;}
+
+a{cursor: pointer;
+  color: #000;}
+
+/************* Start Navbar ******************/
+.navbar {background: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease-in-out}
+
+.navbar-brand {font-family: 'Cinzel Decorative', cursive;
+                font-size: 30px;
+                font-weight: 800;}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+	font-weight: 800;
+	font-size: 18px;
+}
+/************* End Navbar ******************/
+
+
+/************* Start Background ******************/
+.backgroundA {
+  height: 100vh;
+	background: url(" ../img/apple.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.backgroundB {
+  height: 100vh;
+	background: url(" ../img/apple2.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.backgroundC {
+  min-height: 720px;
+	background: #ededed no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.backgroundD {
+  min-height: 720px;
+	background: url(" ../img/developer.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+.backgroundE {
+  min-height: 720px;
+	background: url(" ../img/imac.jpg") no-repeat center fixed;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+	position:relative;
+	overflow:hidden;
+ }
+
+/************* End Background ******************/
+
+
+/************* Start head ******************/
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.img-thumbnail {    
+	border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+/************* End head ******************/
+
+
+/************* Start About ******************/
+.pad {padding-top: 100px!important;}
+
+.abt {background-color: #ccc;
+      padding: 100px 20px;
+      }
+
+.abt1 {background-color: #ccc;
+      padding: 40px 20px;
+      }
+.abt h2:after {
+	content: ' ';
+	display: block;
+	width: 70px;
+	height: 7px;
+	background: #19a2b9;
+	margin: 20px 20px;
+}
+
+.abt1 h2:after {
+	content: ' ';
+	display: block;
+	width: 70px;
+	height: 7px;
+	background: #19a2b9;
+	margin: 20px 20px;
+}
+
+.fonty {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+}
+
+.abt p {font-size: 17px}
+
+.abt h6,h3 {color:#19a2b9; }
+
+.carousel-item {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fadee {
+  -webkit-animation-name: fadee;
+  -webkit-animation-duration: 3s;
+  animation-name: fadee;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fadee {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+@keyframes fadee {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+
+/************* End About ******************/
+
+
+/*================================= Services ==============================*/
+
+.service-list {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 0 0 50px;
+}
+
+.service-list h4 {
+  text-transform: capitalize;
+}
+
+.service-list p {
+  margin: 0;
+}
+
+.service-list .icon {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.service-list .fa {
+  width: 85px;
+  line-height: 85px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-list h3 {
+  text-transform: capitalize;
+}
+
+.service-list:hover .icon .fa {
+  background: #3498db;
+  color: #fff;
+}
+
+#services .col-xs-12:nth-last-child(-n+3) .service-list {
+  margin: 0;
+}
+
+.pad1 {padding-top: 50px;}
+.brdr:after {
+	content: ' ';
+	display: block;
+	width: 70px;
+	height: 7px;
+	background: #19a2b9;
+	margin: 20px 20px;
+}
+
+/*services ends*/
+
+
+
+/************* Start Portfolio ******************/
+
+
+
+.app {
+    position: relative;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 14px;
+	height: 450px;
+	border-radius: 10px;
+}
+
+.app:hover {box-shadow: 0 0 10px 1px #000;}
+
+.cart {
+    background-color: #FFF;
+    border: 1px solid #D0D0D0;
+    padding: 20px 25px;
+}
+
+.app .app-head {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.app .app-title {
+    line-height: 1.3;
+    display: inline;
+    font-size: 130%;
+    font-weight: 500;
+	color: #217fb6;
+}
+
+.app-head p  {
+    font-size: 90%;
+    line-height: 1;
+    color: #888;
+    margin-left: 10px;
+}
+.app a {color: #217fb6;
+    text-decoration: none;}
+
+.app a:hover {
+    color: #155275;
+    text-decoration: underline;
+}
+
+.app .float-action {
+    position: absolute;
+    top: 13px;
+    right: 30px;
+	font-size: 30px;
+	color: #888;
+	cursor: pointer;
+}
+
+.app .app-body {
+    margin-bottom: 35px;
+    height: 250px;
+}
+
+.app .app-body  img {
+    width: 100%;
+	height: 100%;
+}
+
+.app-foot {
+    text-align: center;
+}
+
+.app-foot .action {
+    padding: 6px 0 0;
+}
+
+.search-head {display: block;
+               width: 100%;
+              margin: 10px 0;
+              position: relative;}
+
+.search-head h4 {display: inline;}
+
+.search-head a {    position: absolute;
+    right: 20px;
+	top: -10px;
+    line-height: 3;
+    display: inline;
+    cursor: pointer}
+
+.search-head a:hover {text-decoration: underline;}
+
+
+.cart1 {
+    background-color: #FFF;
+    border: 1px solid #D0D0D0;
+    padding: 0;
+}
+
+
+.app .app-body1 {
+    margin-bottom: 15px;
+    height: 300px;
+}
+
+.app .app-body1  img {
+    width: 100%;
+	height: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+
+/************* End Portfolio ******************/
+
+
+/************* Start Contact ******************/
+
+
+.form1, .form2 {margin-bottom: 30px;
+                margin-top: 30px;}
+
+.form1 .form-control {margin-bottom: 20px;
+                      background: rgba(255,255,255,0.20);
+                      border-radius: 10px;
+                      color: #fff;}
+
+.form2 .form-control {margin-bottom: 20px;
+                      background: rgba(255,255,255,0.20);
+                      border-radius: 10px;
+                      height: 150px;
+                      color: #fff;}
+
+.centerbtn1 {margin: 20px auto;
+             color: #FFF;
+             background-color: rgba(25,162,185,0.40);
+             z-index: 1;}
+
+.cnt {display: flex;
+      margin: 10px auto;}
+
+
+.footer {    width: 100%;
+           text-align: center;
+    background-color: rgba(255,255,255,0.20);
+	z-index: 4;
+	border: 1px solid #fff;
+	border-radius: 10px;
+       margin-bottom: 10px; }
+
+.footer b {color: #19a2b9;
+          font-size: 16px;
+          line-height: 4;}
+
+.fa-3x {margin: 15px;}
+
+
+.scl {transform: scale(1)!important;}
+/************* End Contact ******************/
+
+
+
+
+
+
+
+
+
+/************* Start Media Query ******************/
+
+
+@media (max-width: 767px) {.social {display: none}
+						   .abt {height: 720px;}
+	                       .backgroundB {height: 1720px;}
+                           .img-thumbnail {top: 80%;}
+						   .hero-text h1 {font-size: 50px;}
+						   .backgroundE {
+								background: url(" ../img/imac.jpg") repeat center fixed;
+
+							 }}
+
+
+@media (min-width: 768px){.abt {height: 540px;}}
+
+
+@media (min-width: 992px){}
+
+
+@media (min-width: 1200px){}
+
+
+/************* End Media Query ******************/
