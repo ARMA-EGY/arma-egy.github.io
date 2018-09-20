@@ -231,20 +231,6 @@ jQuery(document).ready(function($) {
 	
 	
 	
-	$(window).scroll(function(){
-	
-		var sticky = $('.about').offset().top - 90 - 20;
-		
-		if ($(window).scrollTop() > sticky)
-			{
-				$('.navbar').addClass('scrolled');
-			}
-		else if ($(window).scrollTop() < sticky)
-			{
-				$('.navbar').removeClass('scrolled');
-			}	
-		
-	});
 	
 	$('.container2').click(function(){
 		
@@ -252,6 +238,28 @@ jQuery(document).ready(function($) {
 		
 		
 	});
+	
+	
+	var prevScrollpos = window.pageYOffset;
+
+	$(window).scroll(function() {
+
+	var currentScrollPos = window.pageYOffset;
+
+			  if (prevScrollpos > currentScrollPos)
+			  {
+				$('#navbar').css('top', 0);
+			  }
+				else 
+			  {
+				$('#navbar').css('top', '-90px');
+			  }
+			  prevScrollpos = currentScrollPos;
+
+			});
+	
+	
+	
 	
 	
 	});

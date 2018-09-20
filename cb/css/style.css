@@ -11,7 +11,8 @@ h2 {
 /************* Start NavBar******************/
 .navbar {
   z-index: 99;
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   transition: all 1s ease-in-out; }
 
@@ -88,11 +89,7 @@ h2 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
-.scrolled {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%; }
+
 
 /************* End NavBar******************/
 /************* Start Head******************/
