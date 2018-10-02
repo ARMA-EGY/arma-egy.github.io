@@ -1,6 +1,6 @@
 
 .backgroundA {
-  height: 70vh;
+  height: 80vh;
 	background: url(" ../img/cof1.jpg") no-repeat center fixed;
 	background-size: 100% 100%;
 	background-attachment:fixed;
@@ -8,6 +8,9 @@
 	overflow:hidden;
  }
 
+.txt {
+    text-align: right;
+}
 
 
 .testimonials-img {
@@ -70,7 +73,7 @@
 
 @media (max-width: 767px)
 {
-	.backgroundA {height: 90vh;}
+	.backgroundA {height: 100vh;}
 }
 
 

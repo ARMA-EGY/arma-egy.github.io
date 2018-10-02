@@ -93,11 +93,10 @@ h2 {
 
 /************* End NavBar******************/
 /************* Start Head******************/
-#home {
-  padding-top: 90px; }
+#home { }
 
 .backgroundA {
-  height: 70vh;
+  height: 80vh;
   background: url(" ../img/cof.jpg") no-repeat center fixed;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -111,7 +110,7 @@ h2 {
   background: rgba(0, 0, 0, 0.5); }
 
 .txt {
-  padding-top: 20%;
+  padding-top: 30%;
   color: #c2b49a; }
 
 .btn-outline-light {
@@ -161,7 +160,7 @@ h2 {
 
 .h-foot {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-size: 100% 100%;
   background: url("  ../img/Untitled-2 - Copy (2).png"); }
 
@@ -846,7 +845,7 @@ h2 {
 /************* Start Media Query ******************/
 @media (max-width: 767px) {
   .backgroundA {
-    height: 90vh; }
+    height: 100vh; }
 
   .h-foot {
     height: 40vh; } }

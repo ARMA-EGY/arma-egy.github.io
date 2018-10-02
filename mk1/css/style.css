@@ -244,7 +244,7 @@ a:hover {text-decoration: none;}
   background: #EAB429;
 }
 
-.menu .foot {transform: scale(0.6)}
+.menu .foot {transform: scale(0.8)}
 
 
 /************* End Menu ******************/
@@ -1364,7 +1364,7 @@ h1 {
 	
 .pad {padding-top: 150px;}	
 
-.profile {margin-top: 32%;  margin-left: 30px;}	
+.profile {margin-top: 28%;  margin-left: 30px;}	
 	
 .profile img {
     width: 70px;
@@ -1397,6 +1397,8 @@ h1 {
     transform: scale(0.7);}
 	
 .footer b {font-size: 14px;}
+	
+.menu .foot {display: none;}	
 	
 }
 
