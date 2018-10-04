@@ -106,3 +106,20 @@
 .subscribe-wrapper .submit-btn:hover {
   background-color: #d8b08c;
 }
+
+
+
+@media (max-width: 767px) 
+{
+	.parent-wrapper {
+    width: unset; 
+    transform: scale(0.7);
+}
+	.subscribe-wrapper .mail {
+    width: unset;
+    margin-left: 0;
+    margin-top: 0;
+}
+	
+}
+
