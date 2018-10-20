@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>WEAR STORE</title>
+</head>
+
+<body>
+	
+	<!--====================== Header ======================-->
+	
+	<div class="header"><h1>WEAR STORE</h1></div>
+	
+	<!--====================== Start Table (1) ======================-->
+	
+	
+	<div class="container bk1">
+  
+		<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add Product <i class="fa fa-plus"></i>
+</button>
+
+<!--Start Modal (Add Product Card) -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create New Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+		  
+    
+      <form id="addProductForm">
+        <div class="form-group">
+          <label for="productName">Product name</label>
+          <input type="text" class="form-control" id="productName" placeholder="e.g. Sweet-Shirt" required>
+        </div>
+        <div class="form-group">
+          <label for="productPrice">Product price</label>
+          <input type="number" class="form-control" id="productPrice" placeholder="e.g. $130" required>
+        </div>
+		  <div class="form-group">
+          <label for="productCategories">Product Categories</label>
+          <input type="text" class="form-control" id="productCategories" placeholder="e.g. Men's Wear" required>
+        </div>
+		<div class="form-group">
+          <label for="productDate">Product Date</label>
+          <input type="text" class="form-control" id="productDate" placeholder="e.g. 18/10/2018" required>
+        </div>
+        <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+	
+	<!--End Modal (Add Product Card) -->
+		
+		
+		
+  
+
+  <!--========== Start Items ==========-->
+
+  <div class="row" id="products">
+	  
+	  <!--========== Item (1) ==========-->
+	  
+    <div class="col-lg-4 col-md-6 item" id="p-1" >
+		
+      <div class="card my-2 p-2" >
+        <div class="card-title">Item &#8470; 1<br>
+        <img src="img/Women's Hoodie.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Womens Hoodie">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="130">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Women's Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-1">Delete &#8470; 1</button>
+      </div>
+
+    </div>
+	  
+	  <!--========== Item (2) ==========-->
+	  
+	 <div class="col-lg-4 col-md-6 item" id="p-2" >
+		
+      <div class="card my-2 p-2" >
+        <div class="card-title">Item &#8470; 2<br>
+        <img src="img/Men's Hoodie.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Mens Hoodie">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="150">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Men's Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-2">Delete &#8470; 2</button>
+      </div>
+
+    </div>
+	  
+	  <!--========== Item (3) ==========-->
+	  
+	  <div class="col-lg-4 col-md-6 item" id="p-3" >
+		
+      <div class="card my-2 p-2" >
+        <div class="card-title">Item &#8470; 3<br>
+        <img src="img/Girls Jacket.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Girls Jacket">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="100">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Girls Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-3">Delete &#8470; 3</button>
+      </div>
+
+    </div>
+	  
+	  <!--========== Item (4) ==========-->
+	  
+	  <div class="col-lg-4 col-md-6 item" id="p-4" >
+		
+      <div class="card my-2 p-2" >
+        <div class="card-title">Item &#8470; 4<br>
+        <img src="img/Men's Shirt.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Mens Shirt">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="90">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Men's Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-4">Delete &#8470; 4</button>
+      </div>
+
+    </div>
+	  
+	  <!--========== Item (5) ==========-->
+	  
+	  <div class="col-lg-4 col-md-6 item" id="p-5" >
+		
+      <div class="card my-2 p-2">
+        <div class="card-title">Item &#8470; 5<br>
+        <img src="img/Boys Shirt2.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Boys Shirt">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="60">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Boys Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-5">Delete &#8470; 5</button>
+      </div>
+
+    </div>
+	  
+	  <!--========== Item (6) ==========-->
+	  
+	  <div class="col-lg-4 col-md-6 item"  id="p-6" >
+		
+      <div class="card my-2 p-2">
+        <div class="card-title">Item &#8470; 6<br>
+        <img src="img/Women's Shirt.jpg" alt=""/></div>
+        <div class="form-group">
+         <span>Name:</span> <input type="text" class="form-control1" value="Womens Shirt">
+        </div>
+        <div class="form-group">
+         <span>Price:</span> <input type="number" class="form-control1" value="80">
+        </div>
+		<div class="form-group">
+         <span>Category:</span> <input type="text" class="form-control1" value="Women's Wear">
+        </div>
+		<div class="form-group">
+         <span>Date:</span> <input type="text" class="form-control1" value="18/10/2018">
+        </div>
+        <button class="btn btn-danger" data-id="p-6">Delete &#8470; 6</button>
+      </div>
+
+    </div>
+	  
+
+	  <!--========== End Items ==========-->
+	  
+  </div>
+</div>
+
+	
+	<!--====================== End  Table (1) ======================-->
+	
+	
+	
+	
+	<!--====================== Start  Table (2) ======================-->
+	
+	
+<div class="container bk1 Mscroll">
+		
+		<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+  Add Product <i class="fa fa-plus"></i>
+</button>
+<p>HINT: to edit data click on it.</p>
+	
+<!--Start Modal (Add Product row) -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Create New Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+		  
+    
+      <form id="addProductForm1">
+        <div class="form-group">
+          <label for="productName1">Product name</label>
+          <input type="text" class="form-control" id="productName1" placeholder="e.g. T-Shirt" required>
+        </div>
+        <div class="form-group">
+          <label for="productPrice1">Product price</label>
+          <input type="number" class="form-control" id="productPrice1" placeholder="e.g. $130" required>
+        </div>
+		  <div class="form-group">
+          <label for="productCategories1">Product Categories</label>
+          <input type="text" class="form-control" id="productCategories1" placeholder="e.g. Men's Wear" required>
+        </div>
+		<div class="form-group">
+          <label for="productDate1">Product Date</label>
+          <input type="text" class="form-control" id="productDate1" placeholder="e.g. 18/10" required>
+        </div>
+        <button id="btnSubmit1" type="submit" class="btn btn-primary">Submit</button>
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+	
+	
+	<!--========== Start Items ==========-->
+		
+	<table id="table">
+	<thead>
+		<tr>
+			<th >Image</th>
+			<th >Name</th>
+			<th >Category</th>
+			<th >Price</th>
+			<th >Date</th>
+			<th >Dts</th>
+		</tr>
+	</thead>
+	<tbody id="products1">
+		
+		<!--========== Row (1) ==========-->
+		
+		<tr>
+			<td><img src="img/Women's Hoodie.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Womens Hoodie"></td>
+			<td><input class="edit" type="button" value="Womens Wear"></td>
+			<td><input class="edit" type="button" value="130"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		<!--========== Row (2) ==========-->
+		<tr>
+			<td><img src="img/Men's Hoodie.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Mens Hoodie"></td>
+			<td><input class="edit" type="button" value="Mens Wear"></td>
+			<td><input class="edit" type="button" value="150"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		<!--========== Row (3) ==========-->
+		<tr>
+			<td><img src="img/Girls Jacket.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Girls Jacket"></td>
+			<td><input class="edit" type="button" value="Girls Wear"></td>
+			<td><input class="edit" type="button" value="100"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		<!--========== Row (4) ==========-->
+		<tr>
+			<td><img src="img/Men's Shirt.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Mens Shirt"></td>
+			<td><input class="edit" type="button" value="Mens Wear"></td>
+			<td><input class="edit" type="button" value="90"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		<!--========== Row (5) ==========-->
+		<tr>
+			<td><img src="img/Boys Shirt2.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Boyss Shirt"></td>
+			<td><input class="edit" type="button" value="Boys Wear"></td>
+			<td><input class="edit" type="button" value="60"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		<!--========== Row (6) ==========-->
+		<tr>
+			<td><img src="img/Women's Shirt.jpg" alt=""/></td>
+			<td><input class="edit" type="button" value="Womens Shirt"></td>
+			<td><input class="edit" type="button" value="Womens Wear"></td>
+			<td><input class="edit" type="button" value="80"></td>
+			<td><input class="edit" type="button" value="18/10"></td>
+			<td><i class="fa fa-trash Dlr"></i>
+			</td>
+		</tr>
+		
+	</tbody>
+</table>
+	</div>
+	
+	
+	
+<!--====================== End  Table (2) ======================-->
+		
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/java.js"></script>
+	
+</body>
+</html>
