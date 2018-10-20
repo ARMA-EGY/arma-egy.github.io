@@ -76,6 +76,7 @@ body {background-color: #eee;}
 	font-size: 14px;
 	background-color: #fff;
 	border: none;
+	cursor: pointer;
 }
 
 @media (max-width: 767px) 
