@@ -176,7 +176,7 @@ UI1.prototype.addProduct = function(name, price, categories, date) {
 	"use strict";
   var product = new Product1(name, price, categories, date);
    
-  $('#table').find('#products1').append( '<tr>' +
+  $('#table').find('#products1').append( '<tr class="item1">' +
     '<td> <img src="img/avatar.jpg" alt=""/> </td>' +
     '<td> <input class="edit" type="button" value="' +
     product.name + '"></td>' +
@@ -226,11 +226,14 @@ addProductFormT.addEventListener('submit', function(e) {
 
 $('table tbody').on('click','.Dlr', function(){
 	"use strict";
-	if ($('tr').length == 2)
+	
+	var item1 = document.getElementsByClassName("item1");
+	
+	if (item1.length == 1)
     {
 	alert("You Can't Delete All Items");
 	}
-else if ($('tr').length > 2)
+else if (item1.length > 1)
        {
 		
 		if(confirm("Do You Want To Delete This Item ?"))
