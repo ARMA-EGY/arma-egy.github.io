@@ -1,71 +1,20 @@
-
-<?php
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-	
-	$user = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-	$mail = $_POST['mail'];
-	$msg = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-	
-	$formError = array();
-	
-	if (strlen($user) <= 3)
-	
-	{
-		$formError[] =  '<strong>Name</strong> is too small';
-	}
-	
-	if (strlen($msg) <= 10)
-	
-	{
-		$formError[] =  '<strong>Message</strong> is too short';
-	}
-	
-	$mymail  = 'elkholuy@gmail.com';
-	$subject = 'Contact Form';
-	$header  = 'From:'. $mail . '/r/n';
-	
-	
-	
-	if (empty($formError))
-	{
-		
-		mail($mymail, $subject, $msg, $header);
-		
-		
-	$user = '';
-	$mail = '';
-	$msg  = '';
-		
-	}
-	
-	
-}
-
-
-
-
-
-?>
-
-
 <!doctype html>
 <html>
 <head>
      <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="favicon.ico" >
 <title>MK</title>
 	
 	<!-- javascript -->
 	  
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 	
 </head>
 
@@ -884,41 +833,60 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 			<section class="get-in-touch">
    <h2 class="title1">Keep in touch</h2>
 				
-			<?php if (! empty ($formError)) { ?>
-				
-		<div class="alert alert-warning alert-dismissible fade show" role="alert">
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
 			
-			<?php foreach($formError as $error)
-					{
-						echo $error . '<br/>' ;
-					}
-			 ?>
-					
-	   </div>
 				
-			<?php	} ?>
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+		<i class="fa fa-check-square"></i> Your Message Sent Successfully. <i class="fa fa-thumbs-o-up"></i>
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	<span aria-hidden="true">&times;</span>
+	</button>
+	</div>
 				
 				
-   <form class="contact-form1 row1" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+			
+				
+				
+	<div class="alert alert-warning alert-dismissible fade show a-name" role="alert">
+	 <strong>Name</strong> is too small. 
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+				
+	<div class="alert alert-warning alert-dismissible fade show a-mail" role="alert">
+	 <strong>Email</strong> is Not Valid. 
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+				
+	<div class="alert alert-warning alert-dismissible fade show a-msg" role="alert">
+	 <strong>Message</strong> is too short. 
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+				
+				
+				
+				
+   <form method="POST" id="myForm" action="sendmail.php" class="contact-form1 row1">
 	   
       <div class="form-field1 col1 x-50">
          <input id="name" class="input-text1 js-input1" type="text" name="username"
-				value="<?php if (isset($user)) {echo $user;} ?> " required>
+				 required>
          <label class="label1" for="username">Name</label>
       </div>
 	   
       <div class="form-field1 col1 x-50">
          <input id="email" class="input-text1 js-input1" type="email" name="mail"
-				value="<?php if (isset($mail)) {echo $mail;} ?> " required>
+				 required>
          <label class="label1" for="email">E-mail</label>
       </div>
 	   
       <div class="form-field1 col1 x-100">
          <input id="message" class="input-text1 js-input1" type="text" name="message"
-				value="<?php if (isset($msg)) {echo $msg;} ?> " required>
+				 required>
          <label class="label1" for="message">Message</label>
       </div>
 	   
@@ -997,11 +965,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	<!--====================== End Contact ======================-->
 	
 	
-	<!-- BEGIN: Powered by Supercounters.com -->
-<center class="counter1"><script type="text/javascript" src="//widget.supercounters.com/ssl/hit.js"></script><script type="text/javascript">sc_hit(1511398,0,6);</script><br><noscript><a href="http://www.supercounters.com/hitcounter">free simple hit counter</a></noscript>
-</center>
-<!-- END: Powered by Supercounters.com -->
-
 	
 	
 	
@@ -1015,9 +978,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	
 	
 	
-	
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
     <script src="js/java.js"></script>
 

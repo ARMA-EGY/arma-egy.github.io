@@ -146,7 +146,7 @@ a:hover {text-decoration: none;}
 /************* Start Menu ******************/
 
 .cover {
-  background: url(" ../img/Untitled-2-0١.png") no-repeat center;
+  background: url("../img/Untitled-2.png") no-repeat center;
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
@@ -1123,7 +1123,13 @@ a:hover {text-decoration: none;}
 .alert-warning {
     border-color: #da4a39;
     border-radius: 40px 0px;
+	display: none;
 }
+
+.alert-success {
+	display: none;
+}
+
 
 .fa-send{
 	padding: 4px 5px;
@@ -1350,7 +1356,8 @@ h1 {
 {
 .backgroundA {
 	background: url("../img/Untitled-6 - Copy.png") no-repeat center;
-	width: 100%;}
+	width: 100%;
+	background-size: 100% 100%;}
 	
 .backgroundB h1 {font-size: 55px; }	
 	
