@@ -1,0 +1,470 @@
+
+* {transition: all 0.3s linear;}
+
+
+.container2 {
+  display: inline-block;
+  cursor: pointer; }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+
+.navbar-brand .logo {
+	height: 80px;
+	display: none;
+}
+
+
+.btn {
+	border-radius: 20px;
+	padding: 7px 30px;
+}
+
+.btn-danger {
+	background-color: #ea2529;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+	background-color: #555;
+	border-color: #555;
+}
+
+.btn-danger:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.navbar {
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+	background: rgba(0,0,0,0.00)!important;
+	transition: all 0.3s linear;
+}
+
+.navbar.scrolled {
+	background: rgba(0,0,0,0.4)!important;
+}
+
+.logo.scrolled {
+	height: 70px!important;
+}
+
+.nav-toggle.scrolled {
+	margin-top: 40px!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-logo {
+  margin-top: 0!important;
+}
+
+.navbar-nav {
+	margin-top: 70px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ea2529;
+}
+
+.nav-link.active {
+	 color: #ea2529!important;
+}
+
+.logo {
+	background-image: url(../imgs/logo.svg);
+	background-size: 100% 100%;
+	width: 100px;
+	height: 100px;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.header .title {
+	padding-top: 150px;
+    text-align: center;
+    max-width: 500px;
+	margin: auto;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+.cover {
+	background-image: url(../imgs/cover.png);
+    background-size: 100% 100%;
+    height: 60vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.mach1 {
+	background-image: url(../imgs/machine1.svg);
+    max-width: 600px;
+    height: 500px;
+    margin: auto;
+    background-size: 100% 100%;
+    display: block;
+}
+
+
+.figure {
+	background-image: url(../imgs/sprite-sheet.svg);
+    width: 100px;
+    height: 80px;
+	background-size: 551px 425px;
+    margin: auto;
+}
+
+.fig1 {
+    background-position: -15px 0px;
+}
+
+.fig2 {
+    background-position: 140px -125px;
+}
+
+.fig3 {
+    background-position: -220px -10px;
+}
+
+.fig4 {
+    background-position: 145px 0px;
+}
+
+.fig5 {
+    background-position: -15px -115px;
+}
+
+.fig6 {
+    background-position: -215px -130px;
+}
+
+
+.section {
+	max-width: 75%;
+    margin: 10px auto 30px auto;
+}
+
+.section h4 {
+	color: #ea2529;
+}
+
+.divider {
+	background: #ea2529;
+}
+
+
+.red-bg {
+	background-image: url(../imgs/cover2.png);
+    width: 100%;
+    background-size: 100% 100%;
+    padding: 10px;
+	color: #fff;
+}
+
+
+.red-bg .section h4 {
+	color: #fff;
+}
+
+
+.slide i {
+	font-size: 12px;
+	color: #fff;
+}
+
+.slide.show {
+	background: #555!important;
+}
+
+.counters {
+	text-align: center;
+	padding: 50px 0;
+}
+
+
+.counters .num {
+	color: #ea2529;
+	font-size: 40px;
+	font-weight: bold;
+	display: block;
+}
+
+
+.counters .word {
+	color: #ea2529;
+}
+
+.counters p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.l-h {
+	line-height: 1;
+}
+
+.c-h {
+	height: unset;
+}
+
+.footer {
+	text-align: center;
+	color: #fff;
+	margin: 10px auto;
+}
+
+.footer i {
+	margin: 5px;
+	color: #fff;
+}
+
+
+.answer {
+	display: none;
+}
+
+.companies ul {
+	list-style: none;
+	text-align: center;
+}
+
+.companies ul li {
+	display: inline-block;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.companies ul li:hover {
+	color: #ea2529
+}
+
+.filter.selected {
+	color: #ea2529
+}
+
+.table-bordered {
+    border: 1px solid #e48d8e;
+    border-bottom: none;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #e48d8e;
+}
+
+.table {
+    margin-bottom: unset;
+}
+
+
+.company {
+	width: 25%;
+	height: 200px;
+	position: relative;
+	display: inline-block;
+}
+
+
+.company div {
+	background-size: 100% 100%;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+
+.dealer-cover {
+    background-image: url(../imgs/d-cover.png);
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: -1;
+    padding: 30px 0;
+}
+
+.dealer-cover .logo {
+	margin: auto;
+}
+
+.dealer-footer
+{
+	background-image: url(../imgs/d-footer.png);
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: -1;
+	padding: 15px 0;
+}
+
+.d-fig {
+	  margin: 25px auto;
+}
+
+
+.fig7 {
+    background-position: 160px 95px;
+}
+
+.fig8 {
+    background-position: -170px 90px;
+}
+
+.fig9 {
+    background-position: -15px 90px;
+}
+
+.fig-wd {
+	max-width: 350px;
+	text-align: center;
+	color: #555;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000;
+	width: 50%;
+	min-width: 300px;
+	margin: 20px auto;
+}
+
+.pad {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.mach-cover {
+	background-image: url(../imgs/cover3.png);
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: -1;
+    padding: 15px;
+	margin: 60px auto;
+	position: relative;
+}
+
+.mach-info {
+	text-align: right;
+	color: #fff;
+}
+
+.mach-info h4 {
+	margin: 20px;
+}
+
+.mach-fig {
+	background-image: url(../imgs/machine2.svg);
+    background-size: 100% 100%;
+    width: 220px;
+    height: 350px;
+    position: absolute;
+    top: -45px;
+    left: 40px;
+}
+
+
+/**===================== Start Media Query =====================**/
+
+
+@media (max-width: 767px) 
+{
+	.header .title 
+	{
+		padding-top: 100px;
+	}
+	.mach1 
+	{
+    	max-width: 500px;
+    	height: 300px;
+	}
+	.navbar-brand .logo 
+	{
+		display: block;
+	}
+	.navbar-logo 
+	{
+		display: none;
+	}
+	.navbar-collapse 
+	{
+		text-align: right;
+	}
+	.navbar-nav , .nav-toggle.scrolled
+	{
+     margin-top: 0px!important; 
+	}
+	.company 
+	{
+    width: 50%;
+	}
+	.mach-fig 
+	{
+		width: 120px;
+		height: 270px;
+		top: -10px;
+		left: 20px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	
+	.header .title 
+	{
+		padding-top: 100px;
+	}
+	.navbar-brand .logo 
+	{
+		display: block;
+	}
+	.navbar-logo 
+	{
+		display: none;
+	}
+	.navbar-collapse 
+	{
+		text-align: right;
+	}
+	.navbar-nav , .nav-toggle.scrolled
+	{
+     margin-top: 0px!important; 
+	}
+	
+	 
+}
+
+
+/**===================== End Media Query =====================**/
+
+
+
